@@ -1,6 +1,7 @@
 <?php
 require("./poo/app/Config.inc.php");
 $sessao = new Session;
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br" itemscope itemtype="https://schema.org/WebPage">

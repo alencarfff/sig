@@ -6,7 +6,7 @@ define("HOME", "http://localhost/sig/");
 define("BASE", "http://localhost/sig/");
 define("PEGASUS", HOME . "/");
 define("PAGINAS", HOME . "");
-define("SITENOME", "");
+define("SITENOME", "Sig");
 define("DESCRICAO", "");
 
 //CONFIGURAÇÕES DO BANCO DE DADOS
@@ -33,6 +33,7 @@ $permissao = array(
     'home', '404', 'sair', 'recupera_senha', 'newsletter','busca','captcha','validar',
 );
 $pasta = '';
+
 if (substr_count($atual, '/') > 0) {
     $atual = explode('/', $atual);
     $pagina = (file_exists($atual[0] . '.php') && in_array($atual[0], $permissao)) ? $atual[0] : '404';
@@ -111,6 +112,7 @@ $pg_sitekit = HOME . 'imagens_site/imagem_kit';
 $indice = $atual[1];
 
 switch ($pagina):
+
     case 'busca':
         $pg_titulo = 'Buscar';
         $pg_descricao = 'Buscar';

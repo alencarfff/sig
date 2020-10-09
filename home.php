@@ -1,4 +1,7 @@
-<h1 style=" margin: 0 auto; margin-top: 3%">Cadastro de Currículos para Iniciação Científica - ILMD</h1>
+<?php include('menu.php') ?>
+
+
+<h1 style=" margin: 0 auto; margin-top: 7%">Cadastro de Currículos para Iniciação Científica - ILMD</h1>
 
 <article class="janela b-shadow">
    <form method="post" name="cadastrar_curriculo" class="form" style="">
@@ -26,13 +29,13 @@
          <input name="tel" type="text" required placeholder="Telefone" id="mascara_celular" style=" width: 100%;"/>
       </div>
 
-      <!-- <div class="box box25 no-margim" style="margin-left: 10px">
+      <div class="box box25 no-margim" style="margin-left: 10px">
          <p class="texto_form">Sexo</p>
          <select name="sexo" style="background: #fff">
             <option value="F">F</option>
             <option value="M">M</option>
          </select>
-      </div> -->
+      </div>
 
       <div class="limpar"></div>
 

@@ -1,5 +1,6 @@
+<?php include('menu.php') ?>
 
-<h1 style=" margin: 0 auto; margin-top: 3%">Sistema de Informação Gerencial</h1>
+<h1 style=" margin: 0 auto; margin-top: 7%">Sistema de Informação Gerencial</h1>
 <article class="janela b-shadow">
    <form method="post" name="buscar_curriculo" class="form" style="">
       <div class="box box25">
@@ -121,6 +122,9 @@
       <span class="carregando2 ds-none"><img src="<?= HOME; ?>imagens_fixas/carregando2.gif"/></span> 
    </form>
    <div class="limpar" style=" margin-bottom: 2%"></div>
+   <p>Quantidade de itens carregados: 
+      <span id="qntd_items"></span>
+   </p>
    <div class="resposta_busca">
 
    </div>

@@ -229,7 +229,6 @@ $(function () {
             $('.resposta_busca').slideUp();
          },
          success: function (resposta) {
-            //alert(resposta);
             if (resposta == 1) {
                sucesso('Cadastrado com sucesso!');
                setTimeout(function () {
@@ -256,9 +255,13 @@ $(function () {
                $('.carregando2').fadeOut();
                alerta('Preço menor que R$10,00 reais por favor corrija!');
             } else {
+               console.log(resposta)
                $('.sumir_botao').fadeIn();
                $('.carregando2').fadeOut();
                $('.resposta_busca').empty().html('' + resposta + '').slideDown();
+
+               const qntd_items = $('.resposta_busca').children('div').length;
+               $('#qntd_items').empty().html('' + qntd_items + '');
             }
          },
          complete: function () {

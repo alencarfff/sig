@@ -83,7 +83,7 @@ switch ($_POST['acao']) {
             $cnpj_cpf = $_POST['cnpj_cpf'];
             $rg = $_POST['rg'];
             $tel = $_POST['tel'];
-            // $sexo = $_POST['sexo'];
+            $sexo = $_POST['sexo'];
             $cep = $_POST['cep'];
             $rua = $_POST['rua'];
             $numero = $_POST['numero'];
@@ -111,7 +111,7 @@ switch ($_POST['acao']) {
                 'cnpj_cpf' => $cnpj_cpf,
                 'rg' => $rg,
                 'tel' => $tel,
-               //  '$sexo' => $sexo,
+                'sexo' => $sexo,
                 'cep' => $cep,
                 'rua' => $rua,
                 'numero' => $numero,
@@ -247,7 +247,7 @@ switch ($_POST['acao']) {
                <p style="float: left; margin-right: 2%"><span style="font-weight: 600;">RG:</span> <span><?= $listagem_['rg']; ?></span></p>
                <p style="float: left; margin-right: 2%"><span style="font-weight: 600;">E-mail:</span> <span><?= $listagem_['email']; ?></span></p>
                <p style="float: left; margin-right: 2%"><span style="font-weight: 600;">Tel/Cel:</span> <span><?= $listagem_['tel']; ?></span></p>
-               <!-- <p style="float: left; margin-right: 2%"><span style="font-weight: 600;">Tel/Cel:</span> <span><?= $listagem_['sexo']; ?></span></p>                -->
+               <p style="float: left; margin-right: 2%"><span style="font-weight: 600;">Tel/Cel:</span> <span><?= $listagem_['sexo']; ?></span></p>               
                <div class="limpar"></div>
                <p style="float: left; margin-right: 2%"><span style="font-weight: 600;">Endereço:</span> <span><?= $listagem_['rua']; ?></span></p>
                <p style="float: left; margin-right: 2%"><span style="font-weight: 600;">N:</span> <span><?= $listagem_['numero']; ?></span></p>
@@ -327,7 +327,6 @@ switch ($_POST['acao']) {
                ?>
                <div class="limpar"></div>
             </div>
-            <div class="limpar"></div>
             <?php
          endforeach;
       else:
